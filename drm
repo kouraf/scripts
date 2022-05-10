@@ -1,0 +1,5 @@
+#!/bin/sh
+
+CONTAINER_LIST=$(docker ps -a -q)
+docker rm -f $CONTAINER_LIST 
+
